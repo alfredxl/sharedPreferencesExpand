@@ -30,7 +30,6 @@ public class SHA {
      *
      * @param data 需要加密的字节数组
      * @return 加密之后的字节数组
-     * @throws Exception
      */
     public static byte[] encryptSHA(byte[] data) {
         try {
@@ -51,7 +50,6 @@ public class SHA {
      *
      * @param data 需要加密的字符串
      * @return 加密之后的字符串
-     * @throws Exception
      */
     public static String encryptSHA(String data) {
         try {
