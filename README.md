@@ -24,7 +24,7 @@ allprojects {
 ```groovy
 dependencies {
     ...
-    compile 'com.github.alfredxl:sharedexpand:v1.0.1'
+    compile 'com.github.alfredxl:sharedPreferencesExpand:v1.0.0'
 }
 ```
 
