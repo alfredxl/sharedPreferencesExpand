@@ -76,7 +76,7 @@ Shared.clear(context, config);
 ```
 
 
-底层数据结构如下:
+e、底层数据结构如下:
 ```java
 <string name = "testKey">{ "用户001": { "001版本": "testValue" } ,"用户002": { "001版本": "testValue" } }</string>
 ```
