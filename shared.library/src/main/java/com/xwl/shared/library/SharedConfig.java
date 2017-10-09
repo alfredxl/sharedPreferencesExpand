@@ -3,13 +3,12 @@ package com.xwl.shared.library;
 import android.content.Context;
 
 /**
- * @author: xiewenliang
- * @Filename:
- * @Description:
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/10 10:44
+ * <br> ClassName:   SharedConfig
+ * <br> Description: 配置清单
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/10 10:44
  */
-
 public class SharedConfig {
     private static final String DEFAULT_SHARE_FLAG = "#01";
     private static final String DEFAULT_SHARE_FILE_NAME = "DefaultFile";

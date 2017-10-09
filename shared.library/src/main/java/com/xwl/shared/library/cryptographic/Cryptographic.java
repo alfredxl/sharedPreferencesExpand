@@ -7,13 +7,12 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESedeKeySpec;
 
 /**
- * @author: xiewenliang
- * @Filename: Cryptographic
- * @Description: 字节加密解密
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/10 9:24
+ * <br> ClassName:   Cryptographic
+ * <br> Description: 字节加密解密
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/10 9:24
  */
-
 public class Cryptographic implements ICryptographic {
     private static final String ALGORITHM = "desede";
     private static final String TRANSFORMATION = "desede/ECB/PKCS7Padding";

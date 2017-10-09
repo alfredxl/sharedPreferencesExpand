@@ -15,13 +15,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author: xiewenliang
- * @Filename:
- * @Description: 本地数据存储(SharedPreferences)管理类
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/10 11:45
+ * <br> ClassName:   SharedManager
+ * <br> Description: 本地数据存储(SharedPreferences)管理类
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/10 11:45
  */
-
 public class SharedManager {
 
     /**

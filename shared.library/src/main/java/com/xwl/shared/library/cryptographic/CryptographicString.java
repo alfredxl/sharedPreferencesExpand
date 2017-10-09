@@ -9,17 +9,14 @@ import com.xwl.shared.library.custom.IContextDecorate;
 import com.xwl.shared.library.factory.SHA;
 
 import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 /**
- * @author: xiewenliang
- * @Filename: CryptographicString
- * @Description: 字符串加密与解密
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/10 9:25
+ * <br> ClassName:   CryptographicString
+ * <br> Description: 字符串加密与解密
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/10 9:25
  */
-
 public class CryptographicString extends Cryptographic implements ICryptographicString {
     /**
      * 密钥与密文组装工具

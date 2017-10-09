@@ -4,13 +4,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * @author: xiewenliang
- * @Filename: ContextDecorate
- * @Description: 密钥与密文组装实例
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/11 14:17
+ * <br> ClassName:   ContextDecorate
+ * <br> Description: 密钥与密文组装实例
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/11 14:17
  */
-
 public class ContextDecorate implements IContextDecorate {
     private static final String JSON_KEY = "$PS_DR_K#";
     private static final String JSON_VALUE = "$PS_DR_V#";

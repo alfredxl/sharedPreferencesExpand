@@ -3,13 +3,12 @@ package com.xwl.shared.library.storage;
 import android.content.SharedPreferences;
 
 /**
- * @author: xiewenliang
- * @Filename: StorageBaseType
- * @Description: 基本类型存储封装
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/10 15:32
+ * <br> ClassName:   StorageBaseType
+ * <br> Description: 基本类型存储封装
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/10 15:32
  */
-
 public class StorageBaseType extends StorageString implements IStorageBaseType {
 
 

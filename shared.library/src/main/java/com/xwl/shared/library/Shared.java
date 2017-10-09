@@ -5,13 +5,12 @@ import android.content.Context;
 import com.xwl.shared.library.factory.SecretFactory;
 
 /**
- * @author: xiewenliang
- * @Filename:
- * @Description: 本地数据存储(SharedPreferences)
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/10 10:44
+ * <br> ClassName:   Shared
+ * <br> Description: 本地数据存储(SharedPreferences)
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/10 10:44
  */
-
 public class Shared {
 
     /**

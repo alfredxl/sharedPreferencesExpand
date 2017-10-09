@@ -1,13 +1,12 @@
 package com.xwl.shared.library.cryptographic;
 
 /**
- * @author: xiewenliang
- * @Filename: 加解密（字符串）
- * @Description:
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/10 9:18
+ * <br> ClassName:   ICryptographicString
+ * <br> Description: 加解密（字符串）
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/10 9:18
  */
-
 public interface ICryptographicString extends ICryptographic {
     /**
      * 加密字符串

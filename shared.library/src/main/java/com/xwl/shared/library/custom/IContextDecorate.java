@@ -1,13 +1,12 @@
 package com.xwl.shared.library.custom;
 
 /**
- * @author: xiewenliang
- * @Filename: IContextDecorate
- * @Description: 密钥与密文组装接口
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/11 14:17
+ * <br> ClassName:   IContextDecorate
+ * <br> Description: 密钥与密文组装接口
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/11 14:17
  */
-
 public interface IContextDecorate {
     /**
      * 获取组装后的字符串

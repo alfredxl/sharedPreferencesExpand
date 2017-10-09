@@ -3,8 +3,8 @@ package com.xwl.shared.library.factory;
 import android.content.Context;
 
 /**
- * <br> ClassName:   ${className}
- * <br> Description:
+ * <br> ClassName:   DataFactory
+ * <br> Description: 密钥存储
  * <br>
  * <br> Author:      谢文良
  * <br> Date:        2017/9/30 9:54

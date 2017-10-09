@@ -11,11 +11,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * @author: xiewenliang
- * @Filename:
- * @Description:
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/7/19 14:07
+ * <br> ClassName:   SharedTest
+ * <br> Description: 单元测试
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/7/19 14:07
  */
 public class SharedTest {
     /**

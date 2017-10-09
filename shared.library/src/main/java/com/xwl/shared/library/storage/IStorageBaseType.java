@@ -1,13 +1,12 @@
 package com.xwl.shared.library.storage;
 
 /**
- * @author: xiewenliang
- * @Filename: IStorageBaseType
- * @Description: 基本数据类型存储封装
- * @Copyright: Copyright (c) 2017 Tuandai Inc. All rights reserved.
- * @date: 2017/5/10 15:27
+ * <br> ClassName:   IStorageBaseType
+ * <br> Description: 基本数据类型存储封装
+ * <br>
+ * <br> Author:      谢文良
+ * <br> Date:         2017/5/10 15:27
  */
-
 public interface IStorageBaseType extends IStorageString {
 
     /**
