@@ -1,4 +1,4 @@
-sharedexpand<br>
+sharedPreferencesExpand<br>
 ==
 友好的本地SP文件常用存储功能的封装插件。<br>
 
@@ -73,6 +73,12 @@ SharedConfig config = SharedConfig.builder()
                 .setShareFileName("TestSp") //只需要指定SP文件名即可
                 .build(); //构建
 Shared.clear(context, config);
+```
+
+
+底层数据结构如下:
+```java
+<string name = "testKey">{ "用户001": { "001版本": "testValue" } ,"用户002": { "001版本": "testValue" } }</string>
 ```
 
 
