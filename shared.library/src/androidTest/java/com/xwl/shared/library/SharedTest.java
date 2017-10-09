@@ -85,10 +85,19 @@ public class SharedTest {
         mTestSM.putInt("testInt", -99);
         Assert.assertEquals(mTestSM.getInt("testInt", 0), -99);
 
+        mTestSM.putInt("testInt", Integer.MAX_VALUE);
+        Assert.assertEquals(mTestSM.getInt("testInt", 0), Integer.MAX_VALUE);
+
+        mTestSM.putInt("testInt", Integer.MIN_VALUE);
+        Assert.assertEquals(mTestSM.getInt("testInt", 0), Integer.MIN_VALUE);
+
         mTestSM.putString("testString", "测试");
         Assert.assertEquals(mTestSM.getString("testString", ""), "测试");
 
         mTestSM.putString("testString", "");
+        Assert.assertEquals(mTestSM.getString("testString", ""), "");
+
+        mTestSM.putString("testString", null);
         Assert.assertEquals(mTestSM.getString("testString", ""), "");
 
         mTestSM.putLong("testLong", 81L);
@@ -97,16 +106,34 @@ public class SharedTest {
         mTestSM.putLong("testLong", -16L);
         Assert.assertEquals(mTestSM.getLong("testLong", 0), -16L);
 
+        mTestSM.putLong("testLong", Long.MAX_VALUE);
+        Assert.assertEquals(mTestSM.getLong("testLong", 0), Long.MAX_VALUE);
+
+        mTestSM.putLong("testLong", Long.MIN_VALUE);
+        Assert.assertEquals(mTestSM.getLong("testLong", 0), Long.MIN_VALUE);
+
         mTestSM.putFloat("testFloat", 3.16f);
-        Assert.assertEquals(String.valueOf(mTestSM.getFloat("testFloat", 0)), String.valueOf(3.16f));
+        Assert.assertEquals(mTestSM.getFloat("testFloat", 0), 3.16f);
 
         mTestSM.putFloat("testFloat", 0.015f);
-        Assert.assertEquals(String.valueOf(mTestSM.getFloat("testFloat", 0)), String.valueOf(0.015f));
+        Assert.assertEquals(mTestSM.getFloat("testFloat", 0), 0.015f);
 
-        mTestSM.putDouble("testFloat", 2.63d);
-        Assert.assertEquals(String.valueOf(mTestSM.getDouble("testFloat", 0)), String.valueOf(2.63d));
+        mTestSM.putFloat("testFloat", Float.MAX_VALUE);
+        Assert.assertEquals(mTestSM.getFloat("testFloat", 0), Float.MAX_VALUE);
 
-        mTestSM.putDouble("testFloat", -9.47d);
-        Assert.assertEquals(String.valueOf(mTestSM.getDouble("testFloat", 0)), String.valueOf(-9.47d));
+        mTestSM.putFloat("testFloat", Float.MIN_VALUE);
+        Assert.assertEquals(mTestSM.getFloat("testFloat", 0), Float.MIN_VALUE);
+
+        mTestSM.putDouble("testDouble", 2.63d);
+        Assert.assertEquals(mTestSM.getDouble("testDouble", 0), 2.63d);
+
+        mTestSM.putDouble("testDouble", -9.47d);
+        Assert.assertEquals(mTestSM.getDouble("testDouble", 0), -9.47d);
+
+        mTestSM.putDouble("testDouble", Double.MAX_VALUE);
+        Assert.assertEquals(mTestSM.getDouble("testDouble", 0), Double.MAX_VALUE);
+
+        mTestSM.putDouble("testDouble", Double.MIN_VALUE);
+        Assert.assertEquals(mTestSM.getDouble("testDouble", 0), Double.MIN_VALUE);
     }
 }
