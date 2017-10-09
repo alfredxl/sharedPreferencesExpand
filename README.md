@@ -61,6 +61,21 @@ Shared.with(context, config).putString("test", "value");
 >VersionControl: 是否对数据的版本做控制，默认为false, 如果开启，则APP版本发生变化，获取到的数据将为空（在新版本执行数据插入之前）, 版本控制只保存最新版本的数据，旧版本的数据将被覆盖<br>
 >注意：以上配置只针对SP文件中当前key有效
 
+
+d、关于清除数据
+>1、清除默认SP文件的数据（整个默认SP文件的数据都会被清除）:
+```java
+Shared.clear(context);
+```
+>2、清除指定SP文件的数据（改指定文件的数据都会被清除）:
+```java
+SharedConfig config = SharedConfig.builder()
+                .setShareFileName("TestSp") //只需要指定SP文件名即可
+                .build(); //构建
+Shared.clear(context, config);
+```
+
+
 关于混淆:
 --
 本插件可以完全混淆，不需要keep
