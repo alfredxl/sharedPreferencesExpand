@@ -67,15 +67,34 @@ public class SharedManager {
      */
     public static SharedManager get(Context context, SharedConfig sharedConfig) {
         String mapKey = sharedConfig.getShareFileName();
-        if (!sharedMap.containsKey(mapKey) || sharedMap.get(mapKey).get() == null) {
+        SharedManager mSharedManager = getSharedManager(mapKey);
+        if (mSharedManager == null) {
             synchronized (SharedManager.class) {
-                if (!sharedMap.containsKey(mapKey) || sharedMap.get(mapKey).get() == null) {
-                    SharedManager sharedManager = new SharedManager(context, sharedConfig);
-                    sharedMap.put(mapKey, new WeakReference<>(sharedManager));
+                mSharedManager = getSharedManager(mapKey);
+                if (mSharedManager == null) {
+                    mSharedManager = new SharedManager(context, sharedConfig);
+                    sharedMap.put(mapKey, new WeakReference<>(mSharedManager));
                 }
             }
         }
-        return sharedMap.get(mapKey).get();
+        return mSharedManager;
+    }
+
+    /**
+     * <br> Description: 获取SharedManager
+     * <br> Author:      谢文良
+     * <br> Date:        2017/10/13 11:42
+     *
+     * @param mapKey mapKey
+     * @return SharedManager
+     */
+    private static SharedManager getSharedManager(String mapKey) {
+        SharedManager mSharedManager = null;
+        WeakReference<SharedManager> mWeakReference = sharedMap.get(mapKey);
+        if (mWeakReference != null && mWeakReference.get() != null) {
+            mSharedManager = mWeakReference.get();
+        }
+        return mSharedManager;
     }
 
     /**
