@@ -94,10 +94,10 @@ public class SHA {
      * @return 十六进制字符串
      */
     private static String byteArrayToHexString(byte[] bytes) {
-        StringBuffer stringBuffer = new StringBuffer();
+        StringBuilder stringBuilder = new StringBuilder();
         for (byte item : bytes) {
-            stringBuffer.append(byteToHexString(item));
+            stringBuilder.append(byteToHexString(item));
         }
-        return stringBuffer.toString();
+        return stringBuilder.toString();
     }
 }
