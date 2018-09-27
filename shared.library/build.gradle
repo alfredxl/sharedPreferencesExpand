@@ -34,7 +34,7 @@ dependencies {
 
 uploadArchives {
     repositories.mavenDeployer {
-        repository(url: uri('http://localhost:8080/localmaven/shared/'))//打包存放的位置，这里存放在Module的同级位置
+        repository(url: uri('D:' + File.separator + 'localmaven' + File.separator + 'shared'))//打包存放的位置，这里存放在Module的同级位置
         pom.groupId = 'com.github.alfredxl.shared'//包名
         pom.artifactId = 'alfredxlShared'//插件名， 在需要引用插件时用到
         pom.version = '1.0.0'
