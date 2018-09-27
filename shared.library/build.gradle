@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven'
 
 group = 'com.github.alfredxl'
 
@@ -29,6 +30,15 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: uri('../alfredxlShared'))//打包存放的位置，这里存放在Module的同级位置
+        pom.groupId = 'com.github.alfredxl.shared'//包名
+        pom.artifactId = 'alfredxlShared'//插件名， 在需要引用插件时用到
+        pom.version = '1.0.0'
+    }
 }
 
 // 指定编码
